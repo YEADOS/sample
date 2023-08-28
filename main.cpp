@@ -1,8 +1,10 @@
 #include <iostream>
 #include <string> 
 
-std::string yo(std::string name) {
-    std::string s = "Get Good ";
+using namespace std; 
+
+string getGood(string name) {
+    string s = "Get Good ";
     return s + name;
 }
 
@@ -11,8 +13,12 @@ int testFunction() {
 }
 
 int main() {
-    std::cout << "Hello World" << std::endl;
-    std::cout << testFunction(); 
-    std::cout << yo("Bob");
+    
+    cout << "What is your Name?: ";
+    string input;
+    cin >> input; 
+    cout << "Hello World" << endl;
+    cout << testFunction() << endl; 
+    cout << getGood(input);
     return 0; 
 }
