@@ -8,6 +8,10 @@ void linux() {
     
 }
 
+int sum(int x, int y) {
+    return x + y; 
+}
+
 string getGood(string name) {
     string s = "Get Good ";
     return s + name;
@@ -26,5 +30,14 @@ int main() {
     cout << testFunction() << endl;
     linux();  
     cout << getGood(input);
+
+    int x;
+    int y;
+    cout << "Enter two ints: " << "\n"; 
+    cin >> x;
+    cin >> y; 
+    cout << sum(x, y);
+
+
     return 0; 
 }
